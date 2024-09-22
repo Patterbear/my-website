@@ -1,16 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 80px;
 }
 
 header {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 15px 20px;
+    padding: 0.85rem 1.3rem;
     width: 100%;
     position: fixed;
     top: 0;
@@ -35,7 +40,7 @@ header a:hover h1 {
 h1 {
     color: red;
     margin: 0;
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 nav {
@@ -47,18 +52,14 @@ nav {
 nav a {
     color: red;
     border: 1px solid red;
-    padding: 10px 12px;
+    padding: 0.5rem 0.65rem;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 nav a:hover {
     background-color: red;
     color: black;
-}
-
-body {
-    padding-top: 80px;
 }
 
 #title-card-section {
@@ -71,9 +72,10 @@ body {
 }
 
 #title-card-section img {
-    margin-right: 40px;
-    width: 500px;
-    height: 500px;
+    margin-right: 2rem;
+    width: 25vw;
+    height: auto;
+    max-width: 425px;
     border: 5px solid red;
     border-radius: 20px;
 }
@@ -85,25 +87,68 @@ body {
 }
 
 #title-card-text h1 {
-    font-size: 96px;
-    margin: 30px 0;
+    font-size: 4rem;
+    margin: 1.6rem 0;
 }
 
 #title-card-text h2 {
-    font-size: 64px;
-    margin: 20px 0;
+    font-size: 2.5rem;
+    margin: 1rem 0;
 }
 
 #title-card-icons {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
+    gap: 2rem;
+    margin-top: 1.6rem;
 }
 
 #title-card-icons img {
-    width: 120px;
-    height: 120px;
+    width: 8vw;
+    height: auto;
+    max-width: 100px;
     border: 5px solid red;
     border-radius: 20px;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+
+#about-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 1.5rem;
+}
+
+.about-me-image {
+    width: 25vw;
+    height: auto;
+    border: 5px solid red;
+    border-radius: 20px;
+}
+
+#about-me-icons-image {
+    width: 100%;
+    height: auto;
+}
+
+#about-me-paragraph {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin-top: 1.25rem;
 }
