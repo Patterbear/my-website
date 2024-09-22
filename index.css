@@ -118,18 +118,19 @@ nav a:hover {
     padding: 2rem;
     background-color: black;
     color: white;
+    margin-bottom: 100px;
 }
 
 #about-me h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 4vw;
+    margin-bottom: 1.5rem;
 }
 
 .about-me-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 80%;
     max-width: 1200px;
     gap: 1.5rem;
 }
@@ -142,13 +143,58 @@ nav a:hover {
 }
 
 #about-me-icons-image {
-    width: 100%;
-    height: auto;
+    margin-left: 5%;
+    width: 40vw;
+    object-fit: contain;
 }
 
 #about-me-paragraph {
     text-align: center;
-    font-size: 1.5rem;
-    max-width: 700px;
+    font-size: 1.6rem;
     margin-top: 1.25rem;
+}
+
+#experience {
+    height: 100vh;
+    padding: 5vw;
+    margin: 1.6rem 0;
+}
+
+#experience-section h2 {
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 3vh;
+    color: white;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.experience-item img {
+    width: 20vw;
+    height: auto;
+    object-fit: contain;
+    margin-right: 2vw;
+}
+
+.experience-item h3 {
+    font-size: 2.5vw;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #experience-section h2 {
+        font-size: 6vw;
+    }
+
+    .experience-item img {
+        width: 40vw;
+    }
+
+    .experience-item h3 {
+        font-size: 4vw;
+    }
 }

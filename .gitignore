@@ -1,2 +1,5 @@
 # excludes my design files
 *.pptx
+
+# excludes unused assets
+unused-assets/
